@@ -4,12 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a0249b55f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>
-        Hello
-    </h1>
-    <h2>hello2</h2>
+    <!-- ------------top bar ------------- -->
+    <div class="topbar">
+        <div class="container">
+            <div class="inner-container">
+                <div class="left">
+                    <a href="#"><span>Hime leveres av Modum Kabel-TV</span></a>
+                </div>
+                <div class="right">
+                    <a href="#"><span>Min side</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------navbar ------------  -->
+    <div class="navbar">
+        <div class="container">
+            <div class="inner-container">
+                <div class="logo">
+                    <a href="#"><img src="assets/imgs/Hime_Logo_Farger_RGB.png" alt="header logo"></a>
+                </div>
+
+                <div class="menu">
+                    <ul id="menu">
+                        <li><a href="#">TV & internett </a></li>
+                        <li><a href="#">Om Hime </a></li>
+                        <li><a href="#">Vanlige spørsmål </a></li>
+                        <li><a href="#">Kontakt </a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-button">
+                    <a href="#"><span>Bestill</span></a>
+                </div>
+                <i class="fa-solid fa-bars" id="menu-bar"></i>
+                <i class="fa-solid fa-xmark" id="xmark"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    
+    <script>
+        $(function(){
+            $('#menu').slicknav();
+        });
+    </script>
+
 </body>
 </html>

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+:root{
+    --primary-color: #003C46;
+    --secondery-color: #FF8278;
+    --bg-color: #DCDCDC4D;
+    --white: #FFFFFF;
+    --black: #000000;
+    --text-color: #003C46;
+    --text-size: 18px;
+    --text-size-mob: 16px;
+    --tag-text: 18px;
+    --tag-text-mob: 16px;
+    --btn-text: 16px;
+    --hover-btn: #00A6C1;
+    --transition: 0.3s all ease-in-out;
+}
+.container{
+    max-width: 1464px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+}
+h1{
+    font-size: 5.4rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 64px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.body-text{
+    font-weight: 500;
+    font-size: var(--text-size);
+    color: var(--text-color);
+    line-height: 26px;
+}
+.tag{
+    font-size: var(--tag-text);
+    color: var(--secondery-color);
+    font-weight: 800;
+    line-height: 64px;
+}
+.active-btn{
+    font-size: var(--btn-text);
+    font-weight: 500;
+    background: var(--secondery-color);
+    padding: 16px 70px 16px 60px;
+    border-radius: 30px;
+    border: none;
+}
+
+
+
+/* ------------topbar-------------- */
+.topbar{
+    width: 100%;
+    background: var(--primary-color);
+}
+.topbar .container .inner-container{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar .container .inner-container .left a span{
+    font-size: 14px;
+    color: var(--white);
+    transition: var(--transition);
+}
+.topbar .container .inner-container .left a span:hover{
+    color: var(--hover-btn);
+}
+.topbar .container .inner-container .right a span{
+    font-size: 14px;
+    color: var(--white);
+    position: relative;
+    transition: var(--transition);
+}
+.topbar .container .inner-container .right a span:hover{
+    color: var(--hover-btn);
+}
+.topbar .container .inner-container .right a span::before {
+    content: '\f007';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    font-family: 'font awesome 6 free';
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* ------------ navbar section ------------ */
+.navbar{
+    background: var(--secondery-color);
+}
+.navbar .container .inner-container{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.navbar .container .inner-container .menu ul li a{
+    color: var(--white);
+    font-size: var(--text-size);
+    font-weight: 600;
+    padding: 8px 16px;
+    transition: var(--transition);
+}
+.navbar .container .inner-container .menu ul li a:hover{
+    color: var(--hover-btn);
+}
+
+.navbar .container .inner-container .nav-button a span{
+    font-size: var(--text-size);
+    font-weight: 800;
+    color: var(--white);
+    padding-right: 26px;
+    position: relative;
+    transition: var(--transition);
+}
+.navbar .container .inner-container .nav-button a span::before{
+    position: absolute;
+    content: '\e09a';
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(90deg);
+    font-family: 'font awesome 6 free';
+    font-weight: 700;
+}
+.navbar .container .inner-container .nav-button a span:hover{
+    color: var(--hover-btn);
+}
+
+#menu-bar{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white);
+    display: none;
+}
+#xmark{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------ Responsive using Media Query ------------------------  */
+@media  screen and (max-width: 989px) {
+    .container{
+        padding: 0;
+    }
+    .topbar .container{
+        padding: 0 20px;
+    }
+    .navbar .container .inner-container .logo{
+        margin-left: 20px;
+    }
+    .navbar .container .inner-container .menu, .navbar .container .inner-container .nav-button{
+        display: none;
+    }
+    #menu-bar{
+        margin-right: 20px;
+        display: block;
+    }
+
+    .navbar .container .inner-container{
+        position: relative;
+    }
+    .navbar .container .inner-container .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        z-index: 999;
+        background-color: var(--primary-color);
+        text-align: center;
+        transition: var(--transition);
+    }
+    .navbar .container .inner-container .menu ul li{
+        display: block;
+        margin: 20px 0;
+    }
+    .navbar .container .inner-container .menu ul li a{
+        display: block;
+    }
+    .navbar .container .inner-container .menu .toggle{
+        display: block;
+        height: 100%;
+    }
+}
