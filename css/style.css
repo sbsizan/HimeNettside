@@ -58,7 +58,7 @@ h2{
     font-size: var(--tag-text);
     color: var(--secondery-color);
     font-weight: 800;
-    line-height: 6.4rem;
+    cursor: pointer;
 }
 .active-btn{
     font-size: var(--btn-text);
@@ -188,9 +188,6 @@ h2{
     align-self: center;
     padding-right: 20px;
 }
-.banner .container .inner-container .content .tag{
-    margin-bottom: -22px;
-}
 .banner .container .inner-container .content h1{
     margin-bottom: 23px;
 }
@@ -241,6 +238,163 @@ h2{
 
 
 
+
+
+
+
+
+
+/* ------------------------ TV og Internet Section ------------------ */
+.tvoginternet{
+    background: var(--bg-color);
+}
+.tvoginternet .container .top-text{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.tvoginternet .container .inner-container{
+    padding: 120px 0;
+}
+.tvoginternet .container .inner-container .top-text .tag {
+    display: inline-block;
+    border-bottom: 2px solid var(--secondery-color);
+    padding-bottom: 0.3rem;
+}
+
+
+.tvoginternet .container .inner-container .card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 7.5rem;
+}
+.tvoginternet .container .inner-container .card > div{
+    padding: 4rem;
+    background: var(--white);
+}
+.tvoginternet .container .inner-container .card .left{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 6rem;
+    align-items: center;
+    border-radius: 10px;
+}
+/* .tvoginternet .container .inner-container .card .left .img{
+    flex-basis: 1;
+}
+.tvoginternet .container .inner-container .card .left .content{
+    flex-basis: 1;
+} */
+.tvoginternet .container .inner-container .card .left .img img{
+    max-width: 160px;
+    display: block;
+}
+
+.tvoginternet .container .inner-container .card .left .content h3{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+.tvoginternet .container .inner-container .card .left .content .lesmer-btn{
+    font-size: var(--btn-text);
+    font-weight: 600;
+    border: none;
+    color: var(--secondery-color);
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    transition: var(--transition);
+}
+.tvoginternet .container .inner-container .card .left .content .lesmer-btn::after{
+    position: absolute;
+    content: '\f105';
+    font-family: 'font awesome 6 free';
+    font-weight: 700;
+    top: 50%;
+    right: -14px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+.tvoginternet .container .inner-container .card .left .content .lesmer-btn:hover{
+    color: var(--hover-btn);
+}
+
+
+
+
+.tvoginternet .container .inner-container .card .right{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 6rem;
+    align-items: center;
+    border-radius: 10px;
+}
+/* .tvoginternet .container .inner-container .card .right .img{
+    flex-basis: 1;
+}
+.tvoginternet .container .inner-container .card .right .content{
+    flex-basis: 1;
+} */
+.tvoginternet .container .inner-container .card .right .img img{
+    max-width: 160px;
+    display: block;
+}
+
+.tvoginternet .container .inner-container .card .right .content h3{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+.tvoginternet .container .inner-container .card .right .content .lesmer-btn{
+    font-size: var(--btn-text);
+    font-weight: 600;
+    border: none;
+    color: var(--secondery-color);
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    transition: var(--transition);
+}
+.tvoginternet .container .inner-container .card .right .content .lesmer-btn::after{
+    position: absolute;
+    content: '\f105';
+    font-family: 'font awesome 6 free';
+    font-weight: 700;
+    top: 50%;
+    right: -14px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+.tvoginternet .container .inner-container .card .right .content .lesmer-btn:hover{
+    color: var(--hover-btn);
+}
+
+
+
+.tvoginternet .container .inner-container .tvoginternet-btn{
+    text-align: center;
+}
+
+.tvoginternet .container .inner-container .active-btn{
+    margin-top: 7.5rem;
+    position: relative;
+    transition: var(--transition);
+}
+.tvoginternet .container .inner-container .active-btn::after {
+    content: '\f08b';
+    position: absolute;
+    font-family: 'font awesome 6 free';
+    top: 50%;
+    right: 48px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 700;
+}
+.tvoginternet .container .inner-container .active-btn:hover{
+    background: var(--hover-btn);
+}
 
 
 
