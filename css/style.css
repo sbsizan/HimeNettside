@@ -42,10 +42,9 @@ h1{
     font-size: 5.4rem;
     font-weight: 800;
     color: var(--primary-color);
-    line-height: 64px;
 }
 h2{
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 800;
     color: var(--primary-color);
 }
@@ -53,21 +52,23 @@ h2{
     font-weight: 500;
     font-size: var(--text-size);
     color: var(--text-color);
-    line-height: 26px;
+    line-height: 2.6rem;
 }
 .tag{
     font-size: var(--tag-text);
     color: var(--secondery-color);
     font-weight: 800;
-    line-height: 64px;
+    line-height: 6.4rem;
 }
 .active-btn{
     font-size: var(--btn-text);
-    font-weight: 500;
+    font-weight: 600;
     background: var(--secondery-color);
     padding: 16px 70px 16px 60px;
     border-radius: 30px;
     border: none;
+    color: var(--white);
+    display: inline-block;
 }
 
 
@@ -168,6 +169,80 @@ h2{
 
 
 
+/* ----------------------- banner section -----------------  */
+.banner .container .inner-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 175px 0;
+}
+.banner .container .inner-container .img-section{
+    flex-basis: 58%;
+}
+.banner .container .inner-container .img-section img{
+    width: 100%;
+}
+
+.banner .container .inner-container .content{
+    flex-basis: 42%;
+    align-self: center;
+    padding-right: 20px;
+}
+.banner .container .inner-container .content .tag{
+    margin-bottom: -22px;
+}
+.banner .container .inner-container .content h1{
+    margin-bottom: 23px;
+}
+.banner .container .inner-container .content .body-text{
+    margin-bottom: 40px;
+    max-width: 470px;
+}
+.banner .container .inner-container .content .active-btn{
+    position: relative;
+    transition: var(--transition);
+}
+.banner .container .inner-container .content .active-btn::after {
+    content: '\f08b';
+    position: absolute;
+    font-family: 'font awesome 6 free';
+    top: 50%;
+    right: 48px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 700;
+}
+.banner .container .inner-container .content .active-btn:hover{
+    background: var(--hover-btn);
+}
+.banner .container .inner-container .content .btn-setjenester{
+    font-size: var(--btn-text);
+    font-weight: 600;
+    border: none;
+    color: var(--secondery-color);
+    display: inline-block;
+    margin-left: 38px;
+    position: relative;
+    transition: var(--transition);
+}
+.banner .container .inner-container .content .btn-setjenester::after {
+    position: absolute;
+    content: '\f105';
+    font-family: 'font awesome 6 free';
+    font-weight: 700;
+    top: 50%;
+    right: -14px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+.banner .container .inner-container .content .btn-setjenester:hover{
+    color: var(--hover-btn);
+}
+
+
+
+
+
 
 
 
@@ -187,10 +262,13 @@ h2{
 /* ------------------------------------ Responsive using Media Query ------------------------  */
 @media  screen and (max-width: 989px) {
     .container{
-        padding: 0;
+        padding: 0 20px;
     }
     .topbar .container{
         padding: 0 20px;
+    }
+    .navbar .container{
+        padding: 0;
     }
     .navbar .container .inner-container{
         position: relative;
@@ -226,6 +304,39 @@ h2{
     }
     .menu ul li a{
         display: block;
+    }
+
+
+
+
+    
+}
+
+
+@media  screen and (max-width: 900px){
+    .banner .container .inner-container{
+        padding: 10rem 0;
+    }
+    .banner .container .inner-container .content .tag{
+        font-size: var(--tag-text-mob);
+    }
+    .banner .container .inner-container .content h1{
+        font-size: 3rem;
+    }
+    .banner .container .inner-container .content .body-text{
+        font-size: 1.6rem;
+    }
+    .banner .container .inner-container .content a{
+        font-size: 1.4rem;
+    }
+    .banner .container .inner-container .content .active-btn{
+        padding: 12px 50px 12px 44px;
+    }
+    .banner .container .inner-container .content .active-btn::after {
+        right: 29px;
+    }
+    .banner .container .inner-container .content .btn-setjenester {
+        margin-left: 18px;
     }
 }
 
