@@ -59,6 +59,9 @@ h2{
     color: var(--secondery-color);
     font-weight: 800;
     cursor: pointer;
+    display: inline-block;
+    border-bottom: 2px solid var(--secondery-color);
+    padding-bottom: 0.3rem;
 }
 .active-btn{
     font-size: var(--btn-text);
@@ -187,6 +190,10 @@ h2{
     flex-basis: 42%;
     align-self: center;
     padding-right: 20px;
+}
+.banner .container .inner-container .content .tag{
+    padding: 0;
+    border: none;
 }
 .banner .container .inner-container .content h1{
     margin-bottom: 23px;
@@ -395,6 +402,122 @@ h2{
 .tvoginternet .container .inner-container .active-btn:hover{
     background: var(--hover-btn);
 }
+
+
+
+/* -------------------Om Hime Section-----------------------  */
+.omhime .container .inner-container{
+    padding: 120px 0;
+    width: 100%;
+}
+.omhime .container .inner-container .top-text{
+    text-align: center;
+}
+.omhime .container .inner-container .top-text .body-text {
+    max-width: 597px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+
+.omhime .container .inner-container .hvorfor-flex-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.omhime .container .inner-container .hvorfor-flex-section .content{
+    flex-basis: 50%;
+}
+.omhime .container .inner-container .hvorfor-flex-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.omhime .container .inner-container .hvorfor-flex-section .content{
+    padding-right: 70px;
+}
+.omhime .container .inner-container .hvorfor-flex-section .content h3{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+.omhime .container .inner-container .hvorfor-flex-section .content{
+    padding-left: 0;
+}
+.omhime .container .inner-container .hvorfor-flex-section .content .body-text {
+    font-weight: 500;
+    font-size: var(--text-size);
+    color: var(--text-color);
+    line-height: 2.6rem;
+    padding-right: 20px;
+}
+.omhime .container .inner-container .hvorfor-flex-section .content .active-btn {
+    margin-top: 30px;
+    position: relative;
+    transition: var(--transition);
+}
+.omhime .container .inner-container .hvorfor-flex-section .content .active-btn::after{
+    content: '\f08b';
+    position: absolute;
+    font-family: 'font awesome 6 free';
+    top: 50%;
+    right: 48px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 700;
+}
+.omhime .container .inner-container .hvorfor-flex-section .content .active-btn:hover{
+    background: var(--hover-btn);
+}
+.omhime .container .inner-container .hvorfor-flex-section .img{
+    flex-basis: 50%;
+}
+.omhime .container .inner-container .hvorfor-flex-section .img img{
+    width: 100%;
+}
+
+
+
+
+.omhime .container .inner-container .ommodum-flex-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    column-gap: 40px;
+    margin-top: 100px;
+}
+.omhime .container .inner-container .ommodum-flex-section .img{
+    flex-basis: 50%;
+}
+.omhime .container .inner-container .ommodum-flex-section .img img{
+    width: 100%;
+}
+.omhime .container .inner-container .ommodum-flex-section .content{
+    flex-basis: 50%;
+    padding-left: 110px;
+}
+
+.omhime .container .inner-container .ommodum-flex-section .content h3{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+.omhime .container .inner-container .ommodum-flex-section .content .active-btn{
+    padding: 16px 16px;
+    margin-top: 30px;
+    transition: var(--transition);
+}
+.omhime .container .inner-container .ommodum-flex-section .content .active-btn:hover{
+    background: var(--hover-btn);
+}
+
+
+
 
 
 
